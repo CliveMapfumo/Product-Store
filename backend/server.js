@@ -67,7 +67,7 @@ app.delete("/api/products/:id", async(req,res)=>{
         res.status(200).json({sucess:true, message:"Product deleted"})
         
     } catch (error) {
-        res.status(404).json({sucess:false, message:"Product not found"})
+        res.status(404).json({sucess:false, message:"Server Error"})
    
     }
 })
